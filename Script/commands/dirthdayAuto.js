@@ -5,7 +5,7 @@ const logFile = __dirname + "/birthday.log";
 module.exports.config = {
   name: "birthdayAuto",
   version: "3.0.1",
-  hasPermssion: 2,
+  hasPermssion: 0,
   credits: "MR JUWEL",
   description: "Fixed auto birthday system",
   commandCategory: "system",
@@ -19,7 +19,7 @@ module.exports.run = async function ({ api, event, args }) {
     fs.writeFileSync(path, JSON.stringify({
       day: 24,
       month: 4,
-      year: 2004,
+      year: 2026,
       ignore: [],
       lastSent: ""
     }, null, 2));
